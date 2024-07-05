@@ -12,8 +12,8 @@ export default [
     input: "src/index.ts",
     output: [
       {
-        file: "dist/index.cjs",
-        format: "cjs",
+        file: "dist/index.node.js",
+        format: "es",
       },
       {
         file: "dist/index.js",
@@ -39,10 +39,6 @@ export default [
       file: "dist/index.d.ts",
       format: "es",
     },
-    plugins: [
-      dts({
-        respectExternal: true,
-      }),
-    ],
+    plugins: [dts()],
   },
 ];
