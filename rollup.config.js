@@ -6,7 +6,9 @@ import terser from "@rollup/plugin-terser";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-
+/**
+ * @type {import('rollup').RollupOptions[]}
+ */
 export default [
   {
     input: "src/index.ts",
